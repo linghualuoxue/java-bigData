@@ -48,7 +48,7 @@
 	var tracker = {
 			// config
 			clientConfig: {
-				serverUrl: "http://192.168.239.8/log.gif",
+				serverUrl: "http://192.168.121.112/log.gif",
 				sessionTimeout: 360, // 360s -> 6min
 				maxWaitTime: 3600, // 3600s -> 60min -> 1h
 				ver: "1"
