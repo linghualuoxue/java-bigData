@@ -74,6 +74,98 @@ public class EventLogConstants {
      * 会话ID
      */
     public static final String LOG_COLUMN_NAME_SESSION_ID = "u_sd";
-    public static final String 
+    /**
+     * 客户端时间
+     */
+    public static final String LOG_COLUMN_NAME_CLIENT_TIME = "c_time";
 
+    /**
+     * 语言
+     */
+    public static final String LOG_COLUMN_NAME_LANGUAGE = "1";
+
+    /**
+     * 浏览器user agent 参数
+     */
+    public static final String LOG_COLUMN_NAME_USER_AGENT = "b_iev";
+
+    /**
+     * 浏览器分辨率大小
+     */
+    public static final String LOG_COLUMN_NAME_RESOLUTON = "b_rst";
+    /**
+     * 定义platform
+     */
+    public static final String LOG_COLUMN_NAME_PLATFORM = "pl";
+
+    /**
+     * 当前url
+     */
+    public static final String LOG_COLUMN_NAME_CURRENT_URL ="p_url";
+
+    /**
+     * 前一个页面的url
+     */
+    public static final String LOG_COLUMM_NAME_REFERRER_URL ="p_ref";
+    /**
+     * 当前页面的title
+     */
+    public static final String LOG_COLUMN_NAME_TITLE = "tt";
+    /**
+     * 订单id
+     */
+    public static final String LOG_COLUMN_NAME_ORDER_ID = "oid";
+    /**
+     * 订单名称
+     */
+    public static final String LOG_COLUMN_NAME_ORDER_NAME = "on";
+    /**
+     * 订单金额
+     */
+    public static final String LOG_COLUMN_NAME_ORDER_CURRENCY_AMOUNT = "cua";
+    /**
+     * 订单货币类型
+     */
+    public static final String LOG_COLUMN_NAME_ORDER_CURRENCY_TYPE = "cut";
+    /**
+     * category 名称
+     */
+    public static final String LOG_COLUMN_NAME_EVENT_CATEGORY = "ca";
+    /**
+     * action 名称
+     */
+    public static final String LOG_COLUMN_NAME_EVENT_ACTION = "ac";
+    /**
+     * kv前缀
+     */
+    public static final String LOG_COLUMN_NAME_EVENT__KV_START = "kv_";
+    /**
+     * 操作系统名称
+     */
+    public static final String LOG_COLUMN_NAME_OS_NAME = "os";
+    /**
+     * 操作系统版本
+     */
+    public static final String LOG_COLUMN_NAME_OS_VERSION = "os_v";
+    /**
+     * 浏览器名称
+     */
+    public static final String LOG_COLUMN_NAME_BROWSER_NAME = "browser";
+    /**
+     * 浏览器版本
+     */
+    public static final String LOG_COLUMN_NAME_BROWSER_VERSION = "browser_v";
+    /**
+     * ip地址解析的所属国家
+     */
+    public static final String LOG_COLUMN_NAME_COUNTRY = "country";
+    /**
+     * ip地址解析的所属省份
+     */
+    public static final String LOG_COLUMN_NAME_PROVINEC= "provice";
+
+    /**
+     * ip地址所解析的所属城市
+     */
+    public static final String LOG_COLUMN_NAME_CITY = "city";
 }
