@@ -34,7 +34,20 @@ public class AnalyserLogDataMapper extends Mapper<LongWritable,Text,NullWritable
             return;
         }
         String eventAlisName = clientInfo.get(EventLogConstants.LOG_COLUMN_NAME_EVENT_NAME);
-
+        EventLogConstants.EventEnum event = EventLogConstants.EventEnum.valueOfAlias(eventAlisName);
+        switch (event){
+            case LAUNCH:
+            case PAGEVIEW:
+            case CHARGERREQUEST:
+            case CHARGEREFUND:
+            case CHARGESUCCESS:
+            case EVENT:
+                this.hanleData(clientInfo,event,context);
+                break;
+            default:
+                this.filterRecords++;
+                this.log.warn("该事件无法进行解析，事件名称为:"+eventAlisName);
+        }
 
 
     }
