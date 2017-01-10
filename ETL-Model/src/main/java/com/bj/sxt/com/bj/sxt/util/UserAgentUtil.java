@@ -1,14 +1,39 @@
 package com.bj.sxt.com.bj.sxt.util;
 
+import cz.mallat.uasparser.OnlineUpdater;
+import cz.mallat.uasparser.UASparser;
+import cz.mallat.uasparser.UserAgentInfo;
+
+import java.io.IOException;
+
 /**
  * Created by user on 2017/1/9.
  */
 public class UserAgentUtil {
 
+    private static UASparser uASparser = null;
+    static {
+        try {
+            uASparser = new UASparser(OnlineUpdater.getVendoredInputStream());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public static UserAgentInfo anlysisAgentUser(String browserInfo) {
 
-        UserAgentInfo userAgentInfo = null;
-        if(browserInfo)
+        UserAgentInfo result = null;
+        if(browserInfo!=null && !browserInfo.trim().isEmpty()){
+            try {
+                cz.mallat.uasparser.UserAgentInfo info = uASparser.parse(browserInfo);
+                result.setBrowserName(info.getUaFamily());
+                result.setBrowserVersion(info.getBrowserVersionInfo());
+                result.setOsName(info.getOsFamily());
+                result.setOsVersion(info.getOsName());
+            } catch (IOException e) {
+                result = null;
+            }
+        }
+        return result;
     }
 
     public static class UserAgentInfo{

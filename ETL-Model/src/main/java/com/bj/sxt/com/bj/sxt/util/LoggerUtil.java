@@ -14,7 +14,8 @@ import java.util.Map;
  * Created by Administrator on 2017/1/8.
  */
 public class LoggerUtil {
-    private final Logger log = Logger.getLogger(LoggerUtil.class);
+    private final static Logger log = Logger.getLogger(LoggerUtil.class);
+    private final static IPSeeker ipSeeker = new IPSeeker();
     public static Map<String,String> handleLog(String logText) {
 
         Map<String,String> clientInfo = new HashMap<String, String>();
@@ -42,6 +43,18 @@ public class LoggerUtil {
             }
         }
         return clientInfo;
+    }
+
+    private static void handleIp(Map<String, String> clientInfo) {
+        if(clientInfo.containsKey(EventLogConstants.LOG_COLUMN_NAME_IP)){
+            String ip = clientInfo.get(EventLogConstants.LOG_COLUMN_NAME_IP);
+            RegionInfo region = IPSeeker.analysisIp(ip);
+            if(region!=null) {
+                clientInfo.put(EventLogConstants.LOG_COLUMN_NAME_COUNTRY, region.getCountry());
+                clientInfo.put(EventLogConstants.LOG_COLUMN_NAME_CITY, region.getCity());
+                clientInfo.put(EventLogConstants.LOG_COLUMN_NAME_PROVINEC, region.getProvice());
+            }
+        }
     }
 
     /**

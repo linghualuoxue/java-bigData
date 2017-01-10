@@ -2,6 +2,7 @@ package com.bj.sxt.etl.mr;
 
 import com.bj.sxt.com.bj.sxt.util.LoggerUtil;
 import com.bj.sxt.common.EventLogConstants;
+import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.hbase.client.Put;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.hadoop.io.LongWritable;
@@ -60,5 +61,24 @@ public class AnalyserLogDataMapper extends Mapper<LongWritable,Text,NullWritable
 
 
 
+    }
+
+    private void handleData(Map<String, String> clientInfo, EventLogConstants.EventEnum event, Context context) {
+
+        String uuid = clientInfo.get(EventLogConstants.LOG_COLUMN_NAME_UUID);
+        String memberId = clientInfo.get(EventLogConstants.LOG_COLUMN_NAME_MEMBER_ID);
+        String serverTime = clientInfo.get(EventLogConstants.LOG_COLUMN_NAME_SERVER_TIME);
+        if(StringUtils.isNotBlank(serverTime)){
+             clientInfo.remove(EventLogConstants.LOG_COLUMN_NAME_USER_AGENT);
+             String rowKey = this.generateRowKey(uuid,memberId,event.alias,serverTime);
+             Put put = new Put(Bytes.toBytes(rowKey));
+            for (Map.Entry<String, String> entry : clientInfo.entrySet()) {
+                if(StringUtils.isNotBlank(entry.getKey()) && StringUtils.isNotBlank(entry.getValue())){
+                    put.add(Bytes.toBytes(family),)
+                }
+            }
+        }else{
+            this.filterRecords++;
+        }
     }
 }
