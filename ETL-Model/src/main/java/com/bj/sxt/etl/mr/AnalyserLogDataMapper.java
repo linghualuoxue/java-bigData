@@ -21,7 +21,7 @@ import java.util.zip.CRC32;
 public class AnalyserLogDataMapper extends Mapper<LongWritable,Text,NullWritable,Put>{
 
     private final Logger log = Logger.getLogger(AnalyserLogDataMapper.class);
-    private int inputRecords,filterRecords;
+    private int inputRecords,filterRecords,outputRecords;
     private byte[] family = Bytes.toBytes(EventLogConstants.EVENT_LOGS_FAMILY_NAME);
     private CRC32 crc32 = new CRC32();
 
@@ -74,11 +74,44 @@ public class AnalyserLogDataMapper extends Mapper<LongWritable,Text,NullWritable
              Put put = new Put(Bytes.toBytes(rowKey));
             for (Map.Entry<String, String> entry : clientInfo.entrySet()) {
                 if(StringUtils.isNotBlank(entry.getKey()) && StringUtils.isNotBlank(entry.getValue())){
-                    put.add(Bytes.toBytes(family),)
+                    put.add(family,Bytes.toBytes(entry.getKey()),Bytes.toBytes(entry.getValue()));
                 }
             }
+            this.outputRecords++;
         }else{
             this.filterRecords++;
         }
+    }
+
+    /**
+     * 根据uuid,memberId,serverTime创建rowKey
+     * @param uuid
+     * @param memberId
+     * @param alias
+     * @param serverTime
+     * @return
+     */
+    private String generateRowKey(String uuid, String memberId, String alias, String serverTime) {
+         StringBuilder sb = new StringBuilder();
+         sb.append(serverTime).append("_");
+         this.crc32.reset();
+         if(StringUtils.isNotBlank(uuid)){
+             this.crc32.update(uuid.getBytes());
+         }
+         if(StringUtils.isNotBlank(memberId)){
+             this.crc32.update(memberId.getBytes());
+         }
+         if(StringUtils.isNotBlank(alias)){
+             this.crc32.update(alias.getBytes());
+         }
+
+         sb.append(this.crc32.getValue()/100000000L);
+        return sb.toString();
+    }
+
+    @Override
+    protected void cleanup(Context context) throws IOException, InterruptedException {
+        super.cleanup(context);
+        log.info("输入数据："+this.inputRecords+",输出数据："+this.outputRecords+",过滤数据："+this.filterRecords);
     }
 }
