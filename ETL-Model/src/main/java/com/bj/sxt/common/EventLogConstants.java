@@ -5,6 +5,7 @@ package com.bj.sxt.common;
  */
 public class EventLogConstants {
 
+
     public static enum EventEnum{
         LAUNCH(1,"launch event","e_l"),//launch事件，表示第一次访问
         PAGEVIEW(2,"page view event","e_pv"),//页面浏览事件
@@ -62,13 +63,22 @@ public class EventLogConstants {
     public static final String LOG_COLUMN_NAME_EVENT_NAME = "en";
 
     /**
+     * 会员id
+     */
+    public static final String LOG_COLUMN_NAME_MEMBER_ID = "u_mid";
+
+    /**
+     * 服务器时间
+     */
+    public static final String LOG_COLUMN_NAME_SERVER_TIME = "s_time";
+    /**
      * 日志收集端的版本信息
      */
-    public static final String LOG_COLUMEN_NAME_VERSION = "ver";
+    public static final String LOG_COLUMN_NAME_VERSION = "ver";
     /**
      * 用户唯一标示
      */
-    public static final String LOG_COLUMEN_NAME_UUID = "u_ud";
+    public static final String LOG_COLUMN_NAME_UUID = "u_ud";
 
     /**
      * 会话ID
