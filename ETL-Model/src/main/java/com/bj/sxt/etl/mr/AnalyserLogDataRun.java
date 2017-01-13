@@ -37,8 +37,10 @@ public class AnalyserLogDataRun implements Tool{
         job.setMapOutputKeyClass(NullWritable.class);
         job.setMapOutputValueClass(Put.class);
         TableMapReduceUtil.initTableReducerJob(EventLogConstants.HBASE_NAME_EVENT_LOGS,null,job,null,null,null,null,false);
+        job.setNumReduceTasks(0);
+        this.setJobInputPath(job);
 
-        return 0;
+        return job.waitForCompletion(true)?0:-1;
     }
 
     @Override
