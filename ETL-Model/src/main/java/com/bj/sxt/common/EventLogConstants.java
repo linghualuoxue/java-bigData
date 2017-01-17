@@ -53,10 +53,7 @@ public class EventLogConstants {
      */
     public static final String LOG_COLUMN_NAME_IP = "ip";
 
-    /**
-     * 服务器时间
-     */
-    public static final String LOG_COLUMN_NAME_SERVER_TIME = "s_time";
+
     /**
      * 事件名称
      */

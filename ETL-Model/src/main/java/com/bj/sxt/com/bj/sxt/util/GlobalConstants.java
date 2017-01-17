@@ -6,4 +6,8 @@ package com.bj.sxt.com.bj.sxt.util;
 public class GlobalConstants {
     //默认值
     public static final String DEFAULT_VALUE = "unknow";
+    /**
+     * 维度信息表中指定全部列值
+     */
+    public static final String VALUE_OF_ALL = "all";
 }
