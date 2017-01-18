@@ -1,6 +1,7 @@
 package com.bj.sxt.com.bj.sxt.util;
 
 
+import com.bj.sxt.common.DateEnum;
 import org.apache.commons.lang.StringUtils;
 
 import java.util.Calendar;
@@ -31,4 +32,20 @@ public class TimeUtils {
         return null;
     }
 
+    public static int getDateInfo(long time, DateEnum type) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(time);
+        if(DateEnum.YEAR.equals(type)){
+           return calendar.get(Calendar.YEAR);
+        }else if(DateEnum.SEASON.equals(type)){
+            int month = calendar.get(Calendar.MONTH) + 1;
+            if(month%3==0){
+                return month%3;
+            }
+            return month%3+1;
+        }else if(DateEnum.){
+
+        }
+
+    }
 }

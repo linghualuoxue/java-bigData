@@ -1,5 +1,8 @@
 package com.bj.sxt.com.bj.sxt.transformer.model.base;
 
+import com.bj.sxt.com.bj.sxt.util.TimeUtils;
+import com.bj.sxt.common.DateEnum;
+
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
@@ -43,7 +46,11 @@ public class DateDimension extends BaseDimension{
         this.calendar = calendar;
     }
 
+    public static DateDimension buildDate(long time, DateEnum type){
 
+        int year = TimeUtils.getDateInfo(time,DateEnum.YEAR);
+          return null;
+    }
 
     public int getId() {
         return id;
@@ -107,18 +114,16 @@ public class DateDimension extends BaseDimension{
 
     public void setCalendar(Date calendar) {
         this.calendar = calendar;
-    }'
-    @Override
+    }
+
     public int compareTo(BaseDimension o) {
         return 0;
     }
 
-    @Override
     public void write(DataOutput dataOutput) throws IOException {
 
     }
 
-    @Override
     public void readFields(DataInput dataInput) throws IOException {
 
     }
