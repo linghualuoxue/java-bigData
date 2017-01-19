@@ -6,6 +6,7 @@ import com.bj.sxt.common.DateEnum;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -49,7 +50,27 @@ public class DateDimension extends BaseDimension{
     public static DateDimension buildDate(long time, DateEnum type){
 
         int year = TimeUtils.getDateInfo(time,DateEnum.YEAR);
-          return null;
+        Calendar calendar = Calendar.getInstance();
+        calendar.clear();
+
+        if(DateEnum.YEAR.equals(type)){
+            calendar.set(year,0,1);
+            return new DateDimension(year,0,0,0,0,type.name,calendar.getTime());
+        }
+        int season = TimeUtils.getDateInfo(time, DateEnum.SEASON);
+        if(DateEnum.SEASON.equals(type)){
+            int month = (3*season-2);
+            calendar.set(year,month-1,1);
+            return new DateDimension(year,season,0,0,0,type.name,calendar.getTime());
+        }
+        int month = TimeUtils.getDateInfo(time, DateEnum.MONTH);
+        if(DateEnum.MONTH.equals(type)){
+            calendar.set(year,month-1,1);
+            return new DateDimension(year,season,month,0,0,type.name,calendar.getTime());
+        }
+        int week = TimeUtils.getDateInfo(time, DateEnum.WEEK);
+        //未完待续
+        return null;
     }
 
     public int getId() {

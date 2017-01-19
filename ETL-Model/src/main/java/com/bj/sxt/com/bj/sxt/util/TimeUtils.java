@@ -43,9 +43,15 @@ public class TimeUtils {
                 return month%3;
             }
             return month%3+1;
-        }else if(DateEnum.){
-
+        }else if(DateEnum.MONTH.equals(type)){
+            return calendar.get(Calendar.MONTH)+1;
+        }else if(DateEnum.WEEK.equals(type)){
+            return calendar.get(Calendar.WEEK_OF_YEAR);
+        }else if(DateEnum.DAY.equals(type)){
+            return calendar.get(Calendar.DAY_OF_MONTH);
+        }else if(DateEnum.HOUR.equals(type)){
+            return calendar.get(Calendar.HOUR_OF_DAY);
         }
-
-    }
+        throw new RuntimeException("没有对应的类型:"+type);
+        }
 }
