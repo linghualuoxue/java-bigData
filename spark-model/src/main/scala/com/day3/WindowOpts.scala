@@ -9,6 +9,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
   */
 object WindowOpts {
   def main(args: Array[String]): Unit = {
+    LoggerLevels.setStreamingLogLevels()
     val conf = new SparkConf().setAppName("windowOpts").setMaster("local[2]")
     val ssc = new StreamingContext(conf,Seconds(5))
     val data = ssc.socketTextStream("64centos2",8888,StorageLevel.MEMORY_AND_DISK_SER_2)
