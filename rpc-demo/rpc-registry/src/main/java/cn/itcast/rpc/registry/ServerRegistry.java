@@ -5,6 +5,8 @@ package cn.itcast.rpc.registry;
  */
 public class ServerRegistry {
 
+
     public void register(String serverAddress) {
+
     }
 }
