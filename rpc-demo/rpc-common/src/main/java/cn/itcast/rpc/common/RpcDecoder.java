@@ -17,7 +17,22 @@ public class RpcDecoder extends ByteToMessageDecoder{
         this.genercClass = rpcRequestClass;
     }
 
-    protected void decode(ChannelHandlerContext channelHandlerContext, ByteBuf byteBuf, List<Object> list) throws Exception {
-
+    protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) throws Exception {
+         if(in.readableBytes() < 4){
+             return;
+         }
+         in.markReaderIndex();//标记当前readIndex的位置
+         int dataLength = in.readInt();
+        if(dataLength<0){
+            ctx.close();
+        }
+        if(in.readableBytes() < dataLength){
+            in.resetReaderIndex();
+            return;
+        }
+        byte[] bytes = new byte[dataLength];
+        in.readBytes(bytes);
+        Object obj = SerializetionUtils.covertToObject(bytes,genercClass);
+        out.add(obj);
     }
 }

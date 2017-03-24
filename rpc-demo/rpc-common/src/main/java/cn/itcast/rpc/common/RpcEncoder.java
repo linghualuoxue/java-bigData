@@ -14,7 +14,11 @@ public class RpcEncoder extends MessageToByteEncoder {
         this.genericClass = rpcResponseClass;
     }
 
-    protected void encode(ChannelHandlerContext channelHandlerContext, Object o, ByteBuf byteBuf) throws Exception {
-
+    protected void encode(ChannelHandlerContext ctx, Object inob, ByteBuf out) throws Exception {
+         if(genericClass.isInstance(inob)){
+             byte[] byes = SerializetionUtils.serialize(inob);
+             out.writeInt(byes.length);
+             out.writeBytes(byes);
+         }
     }
 }
