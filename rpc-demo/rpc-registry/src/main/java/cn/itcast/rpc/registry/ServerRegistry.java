@@ -1,8 +1,7 @@
 package cn.itcast.rpc.registry;
 
-import org.apache.zookeeper.WatchedEvent;
-import org.apache.zookeeper.Watcher;
-import org.apache.zookeeper.ZooKeeper;
+import org.apache.zookeeper.*;
+import org.apache.zookeeper.data.Stat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -50,6 +49,14 @@ public class ServerRegistry {
     }
 
     private void createNode(ZooKeeper zk, String data) {
+        try {
+            if (zk.exists(Constan.ZK_REGISTRY_PATH, null) == null) {
+                zk.create(Constan.ZK_REGISTRY_PATH, null, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+            }
+            zk.create(Constan.ZK_DATA_PATH, data.getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
+            logger.debug("zk 创建节点成功！path：" + zkAddress + " data:" + data);
+        } catch (Exception e) {
+            logger.error("zk 创建节点失败！");
+        }
     }
-
 }

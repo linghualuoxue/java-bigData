@@ -13,6 +13,9 @@
         <module>rpc-registry</module>
         <module>rpc-server</module>
         <module>rpc-common</module>
+        <module>rpc-simple-demo</module>
+        <module>rpc-client</module>
+        <module>rpc-sample-demo</module>
     </modules>
 
 
