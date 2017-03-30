@@ -10,7 +10,7 @@ import io.netty.handler.codec.MessageToByteEncoder;
 public class RpcEncoder extends MessageToByteEncoder {
 
     private Class<?> genericClass;
-    public RpcEncoder(Class<RpcResponse> rpcResponseClass) {
+    public RpcEncoder(Class<?> rpcResponseClass) {
         this.genericClass = rpcResponseClass;
     }
 
