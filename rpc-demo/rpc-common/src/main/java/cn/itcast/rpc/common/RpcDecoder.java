@@ -13,7 +13,7 @@ public class RpcDecoder extends ByteToMessageDecoder{
 
     private Class<?> genercClass;
 
-    public RpcDecoder(Class<RpcRequest> rpcRequestClass) {
+    public RpcDecoder(Class<?> rpcRequestClass) {
         this.genercClass = rpcRequestClass;
     }
 

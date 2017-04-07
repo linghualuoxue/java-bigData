@@ -35,4 +35,8 @@ public class RpcResponse {
     public void setObj(Object obj) {
         this.obj = obj;
     }
+
+    public Object getResult() {
+        return null;
+    }
 }
