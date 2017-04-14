@@ -23,12 +23,37 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="ETL-Modul" />
+        <module name="hadoop-model" />
+        <module name="java-test-model" />
         <module name="LogDataReceive" />
+        <module name="rpc-client" />
+        <module name="rpc-common" />
+        <module name="rpc-registry" />
+        <module name="rpc-sample-client" />
+        <module name="rpc-simple-demo" />
+      </profile>
+      <profile default="false" name="Annotation profile for rpc-demo" enabled="true">
+        <sourceOutputDir name="../../rpc-server/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../rpc-server/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="rpc-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ETL-Modul" target="1.5" />
+      <module name="hadoop-model" target="1.5" />
+      <module name="hadoop-test" target="1.5" />
+      <module name="java-test-model" target="1.7" />
       <module name="LogDataReceive" target="1.5" />
+      <module name="rpc-client" target="1.5" />
+      <module name="rpc-common" target="1.5" />
+      <module name="rpc-demo" target="1.5" />
+      <module name="rpc-registry" target="1.5" />
+      <module name="rpc-sample-client" target="1.5" />
+      <module name="rpc-server" target="1.5" />
+      <module name="rpc-simple-demo" target="1.5" />
+      <module name="spark-model" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

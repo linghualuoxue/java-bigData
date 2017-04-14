@@ -16,6 +16,7 @@
         <module>rpc-simple-demo</module>
         <module>rpc-client</module>
         <module>rpc-sample-demo</module>
+        <module>../hadoop-test</module>
     </modules>
 
 

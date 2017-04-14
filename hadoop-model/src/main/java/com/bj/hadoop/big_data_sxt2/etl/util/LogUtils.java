@@ -40,8 +40,19 @@ public class LogUtils {
     }
 
     private static void handleRequesBody(Map<String, String> map, String requestBody) {
+
+        if(StringUtils.isNotEmpty(requestBody)){
+
+        }
+
     }
     public static void  handleUserAgeng(Map<String, String> map){
+        if(map.containsKey(LogCommon.LOG_COLUMN_NAME_USER_AGENT)){
+            UserAgentInfo info = UserAgentUtil.analycUserAgent(map.get(LogCommon.LOG_COLUMN_NAME_USER_AGENT));
+            if(info!=null){
+
+            }
+        }
 
     }
     public static void  handleIp(Map<String, String> map){

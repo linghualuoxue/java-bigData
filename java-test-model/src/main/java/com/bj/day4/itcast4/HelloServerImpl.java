@@ -5,7 +5,7 @@ import com.bj.day4.itcast4.RpcServer;
 /**
  * Created by Administrator on 2017/3/21.
  */
-@RpcServer("helloServer")
+@RpcServer(HelloServer.class)
 public class HelloServerImpl implements HelloServer {
     @Override
     public void hello(String name) {

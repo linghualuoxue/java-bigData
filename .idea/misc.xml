@@ -11,7 +11,16 @@
       <list>
         <option value="$PROJECT_DIR$/LogDataReceive/pom.xml" />
         <option value="$PROJECT_DIR$/ETL-Model/pom.xml" />
+        <option value="$PROJECT_DIR$/spark-model/pom.xml" />
+        <option value="$PROJECT_DIR$/rpc-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/hadoop-model/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/hadoop-test/pom.xml" />
+        <option value="$PROJECT_DIR$/rpc-server/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -24,5 +33,7 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" assert-keyword="false" jdk-15="false" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" assert-keyword="false" jdk-15="false" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/../testScala/out" />
+  </component>
 </project>

@@ -23,16 +23,8 @@ public class MyServer1 implements ApplicationContextAware {
     public void setApplicationContext(ApplicationContext ctx) throws BeansException {
         Map<String, Object> beansWithAnnotation = ctx.getBeansWithAnnotation(RpcServer.class);
         for (Object o : beansWithAnnotation.values()) {
-            String value = o.getClass().getAnnotation(RpcServer.class).value();
+            String value = o.getClass().getAnnotation(RpcServer.class).value().getName();
             System.out.printf("annotation value is:"+value);
-            Method hello = null;
-            try {
-                hello = o.getClass().getMethod("hello", String.class);
-                hello.invoke(o, "bb");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
         }
     }
 }
