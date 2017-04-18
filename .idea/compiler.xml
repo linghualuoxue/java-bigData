@@ -22,7 +22,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="ETL-Modul" />
         <module name="hadoop-model" />
         <module name="java-test-model" />
         <module name="LogDataReceive" />
@@ -30,14 +29,9 @@
         <module name="rpc-common" />
         <module name="rpc-registry" />
         <module name="rpc-sample-client" />
-        <module name="rpc-simple-demo" />
-      </profile>
-      <profile default="false" name="Annotation profile for rpc-demo" enabled="true">
-        <sourceOutputDir name="../../rpc-server/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../rpc-server/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="rpc-server" />
+        <module name="rpc-simple-demo" />
+        <module name="storm-test1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -54,6 +48,8 @@
       <module name="rpc-server" target="1.5" />
       <module name="rpc-simple-demo" target="1.5" />
       <module name="spark-model" target="1.7" />
+      <module name="storm-model" target="1.5" />
+      <module name="storm-test1" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

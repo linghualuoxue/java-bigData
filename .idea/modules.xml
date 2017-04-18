@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/rpc-demo/rpc-simple-demo/rpc-simple-demo.iml" filepath="$PROJECT_DIR$/rpc-demo/rpc-simple-demo/rpc-simple-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/scala-model/scala-model.iml" filepath="$PROJECT_DIR$/scala-model/scala-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/spark-model/spark-model.iml" filepath="$PROJECT_DIR$/spark-model/spark-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storm-model/storm-model.iml" filepath="$PROJECT_DIR$/storm-model/storm-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storm-model/storm-test1/storm-test1.iml" filepath="$PROJECT_DIR$/storm-model/storm-test1/storm-test1.iml" />
     </modules>
   </component>
 </project>
