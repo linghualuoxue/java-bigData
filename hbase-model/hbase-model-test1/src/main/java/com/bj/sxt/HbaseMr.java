@@ -126,7 +126,7 @@ public class HbaseMr {
             //初始化表
             initTB();
             //创建job
-            Job job = new Job(,conf "hbaseMr");
+            Job job = new Job(conf ,"hbaseMr");
              job.setJarByClass(HbaseMr.class);
 
             //创建scan
