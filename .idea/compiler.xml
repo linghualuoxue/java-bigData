@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="hadoop-model" />
+        <module name="hbase-model-test1" />
         <module name="java-test-model" />
         <module name="LogDataReceive" />
         <module name="rpc-client" />
@@ -31,13 +32,14 @@
         <module name="rpc-sample-client" />
         <module name="rpc-server" />
         <module name="rpc-simple-demo" />
-        <module name="storm-test1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ETL-Modul" target="1.5" />
       <module name="hadoop-model" target="1.5" />
       <module name="hadoop-test" target="1.5" />
+      <module name="hbase-model" target="1.5" />
+      <module name="hbase-model-test1" target="1.5" />
       <module name="java-test-model" target="1.7" />
       <module name="LogDataReceive" target="1.5" />
       <module name="rpc-client" target="1.5" />

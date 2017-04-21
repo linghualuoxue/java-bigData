@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="LogDataReceive:war">
+    <output-path>$PROJECT_DIR$/LogDataReceive/target</output-path>
+    <root id="archive" name="data-receive.war">
+      <element id="artifact" artifact-name="LogDataReceive:war exploded" />
+    </root>
+  </artifact>
+</component>

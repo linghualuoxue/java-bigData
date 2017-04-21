@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/ETL-Model/ETL-Modul.iml" filepath="$PROJECT_DIR$/ETL-Model/ETL-Modul.iml" />
       <module fileurl="file://$PROJECT_DIR$/LogDataReceive/LogDataReceive.iml" filepath="$PROJECT_DIR$/LogDataReceive/LogDataReceive.iml" />
       <module fileurl="file://$PROJECT_DIR$/hadoop-model/hadoop-model.iml" filepath="$PROJECT_DIR$/hadoop-model/hadoop-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hbase-model/hbase-model.iml" filepath="$PROJECT_DIR$/hbase-model/hbase-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hbase-model/hbase-model-test1/hbase-model-test1.iml" filepath="$PROJECT_DIR$/hbase-model/hbase-model-test1/hbase-model-test1.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-test-model/java-test-model.iml" filepath="$PROJECT_DIR$/java-test-model/java-test-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-demo/rpc-client/rpc-client.iml" filepath="$PROJECT_DIR$/rpc-demo/rpc-client/rpc-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-demo/rpc-common/rpc-common.iml" filepath="$PROJECT_DIR$/rpc-demo/rpc-common/rpc-common.iml" />
@@ -15,8 +17,6 @@
       <module fileurl="file://$PROJECT_DIR$/rpc-demo/rpc-simple-demo/rpc-simple-demo.iml" filepath="$PROJECT_DIR$/rpc-demo/rpc-simple-demo/rpc-simple-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/scala-model/scala-model.iml" filepath="$PROJECT_DIR$/scala-model/scala-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/spark-model/spark-model.iml" filepath="$PROJECT_DIR$/spark-model/spark-model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/storm-model/storm-model.iml" filepath="$PROJECT_DIR$/storm-model/storm-model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/storm-model/storm-test1/storm-test1.iml" filepath="$PROJECT_DIR$/storm-model/storm-test1/storm-test1.iml" />
     </modules>
   </component>
 </project>
