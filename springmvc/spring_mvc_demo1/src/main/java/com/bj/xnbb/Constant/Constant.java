@@ -6,7 +6,7 @@ package com.bj.xnbb.Constant;
 public class Constant {
 
     /**
-     * 连接zk的超时时间
+     *  连接zk的超时时间
      */
     public static final int ZK_SESSION_TIMEOUT = 5000;
 
