@@ -9,7 +9,7 @@
 
 
                  <!-- 配置自动扫描的包 -->
-    <context:component-scan base-package="com.bj.xnbb.action"></context:component-scan>
+    <context:component-scan base-package="com.bj.xnbb.controller"></context:component-scan>
 
        <!-- 开启注解模式驱动 -->
        <mvc:annotation-driven></mvc:annotation-driven>
@@ -23,6 +23,6 @@
         <bean class="com.bj.xnbb.interceptors.FirstInterceptor"></bean>
     </mvc:interceptors>
 
-
+    <bean id="initRegist" class="com.bj.xnbb.register2zk.RegisterServer"></bean>
 
          </beans>

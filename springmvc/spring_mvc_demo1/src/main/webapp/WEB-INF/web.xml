@@ -5,6 +5,15 @@
            id="WebApp_ID" version="2.5">
 
 
+    <!-- 加载spring容器 -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath*:spring/applicationContext-*.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
     <!-- 配置DispatchcerServlet -->
         <servlet>
          <servlet-name>springDispatcherServlet</servlet-name>
@@ -12,7 +21,7 @@
          <!-- 配置Spring mvc下的配置文件的位置和名称 -->
          <init-param>
                <param-name>contextConfigLocation</param-name>
-               <param-value>classpath:springmvc.xml</param-value>
+               <param-value>classpath:spring/springmvc.xml</param-value>
            </init-param>
          <load-on-startup>1</load-on-startup>
         </servlet>

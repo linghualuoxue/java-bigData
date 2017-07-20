@@ -1,5 +1,5 @@
 <html>
 <body>
-<a href="mvc/modelAndView"> 视图测试</a>
+<a href="mvc/modelAndView"> 欢迎进入网站</a>
 </body>
 </html>
