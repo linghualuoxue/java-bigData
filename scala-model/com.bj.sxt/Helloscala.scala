@@ -48,9 +48,23 @@ object Helloscala {
     a1.insert(1,10)
 a1.remove(2)
     print(a1.toBuffer)*/
-    val lst1 = List(1,2,3)
+   /* val lst1 = List(1,2,3)*/
+  //print(sum(1,2,3,4,5,6))
 
   }
+
+/*  def sum(nums:Int*)={
+      var result=0
+      for (num <- nums){
+        result+=num
+      }
+    result
+  }*/
+/*  def sum(nums:Int*):Int ={
+    if(nums.length==0) 0
+    else
+      nums.head+sum(nums.tail:_*)
+  }*/
 
 
 

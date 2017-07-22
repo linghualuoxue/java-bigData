@@ -17,6 +17,7 @@
         <module>rpc-client</module>
         <module>rpc-sample-demo</module>
         <module>../hadoop-test</module>
+        <module>../hbase-model</module>
     </modules>
 
 

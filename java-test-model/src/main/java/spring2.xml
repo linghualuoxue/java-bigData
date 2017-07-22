@@ -6,10 +6,9 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
-    <context:component-scan base-package="com.bj.day4.itcast4"></context:component-scan>
+    <context:component-scan base-package="com.bj.day4.itcast3"></context:component-scan>
     <!--<bean id="one" class="com.bj.day4.itcast3.One"></bean>-->
     <!--<bean id="two" class="com.bj.day4.itcast3.Two">
         <constructor-arg name="name" value="zhangsan"></constructor-arg>
     </bean>-->
-
 </beans>
