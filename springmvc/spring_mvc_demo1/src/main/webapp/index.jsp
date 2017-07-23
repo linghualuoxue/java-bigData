@@ -1,5 +1,5 @@
 <html>
 <body>
-<a href="mvc/modelAndView"> 欢迎进入网站</a>
+<a href="user/getUserById?id=1">获取用户</a>
 </body>
 </html>

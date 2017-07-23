@@ -21,7 +21,7 @@
         <property name="maxIdle" value="5"/>
     </bean>
 
-    <!-- sqlSessionFactory -->
+    <!-- sqlSessionFactory 查询缓存-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!-- 数据库连接池 -->
         <property name="dataSource" ref="dataSource" />
@@ -29,12 +29,10 @@
         <property name="configLocation" value="classpath:mybatis/sqlMapConfig.xml" />
     </bean>
 
-    <!-- mapper扫描器 -->
+    <!-- mapper扫描器  在spring容器中注册，生成接口的代理对象-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 扫描包路径，如果需要扫描多个包，中间使用半角逗号隔开 -->
         <property name="basePackage" value="com.bj.xnbb.mapper"></property>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
-
-
          </beans>

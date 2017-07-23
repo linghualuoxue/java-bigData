@@ -22,7 +22,7 @@
     <mvc:interceptors>
         <bean class="com.bj.xnbb.interceptors.FirstInterceptor"></bean>
     </mvc:interceptors>
-
-    <bean id="initRegist" class="com.bj.xnbb.register2zk.RegisterServer"></bean>
-
-         </beans>
+   
+     <!--向zookeeper中注册服务
+     <bean id="initRegist" class="com.bj.xnbb.register2zk.RegisterServer"></bean>
+         </beans> -->

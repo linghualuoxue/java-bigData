@@ -8,8 +8,8 @@
      </head>
  <body>
 
- <h4>Success Page!</h4>
-   <%-- ${date}--%>
-
+ <h4>用户</h4>
+     用户名称：${user.name}
+     用户密码：${user.password}
  </body>
  </html>

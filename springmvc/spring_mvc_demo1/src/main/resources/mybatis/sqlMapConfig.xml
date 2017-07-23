@@ -9,7 +9,7 @@
     <!-- 配置别名 -->
     <typeAliases>
         <!-- 批量扫描别名 -->
-        <package name="com.bj.xnbb.po"/>
+        <package name="com.bj.xnbb.domain"/>
     </typeAliases>
 
     <!-- 配置mapper
