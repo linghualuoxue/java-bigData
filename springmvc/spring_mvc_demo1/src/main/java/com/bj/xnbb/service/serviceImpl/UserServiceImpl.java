@@ -1,8 +1,8 @@
-package com.bj.xnbb.serevrImpl;
+package com.bj.xnbb.service.serviceImpl;
 
 import com.bj.xnbb.dao.UserDao;
 import com.bj.xnbb.domain.User;
-import com.bj.xnbb.server.UserService;
+import com.bj.xnbb.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService{
     private UserDao userDao;
 
     @Override
-    public User getUserById(int id) {
+    public User getUserById(Integer id) {
         return userDao.getUserById(id);  //返回用户
     }
 

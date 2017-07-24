@@ -1,7 +1,7 @@
 package com.bj.xnbb.controller;
 
 import com.bj.xnbb.domain.User;
-import com.bj.xnbb.server.UserService;
+import com.bj.xnbb.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestHeader;

@@ -14,7 +14,7 @@ public interface UserDao {
 	 * @param id
 	 * @return
 	 */
-    public User getUserById(int id);
+    public User getUserById(Integer id);
 
     /**
      * 保存用户

@@ -9,10 +9,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main1/java" />
-          <root url="file://$MODULE_DIR$/src/main1/resources" />
-        </sourceRoots>
       </configuration>
     </facet>
   </component>

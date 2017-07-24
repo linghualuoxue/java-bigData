@@ -14,14 +14,15 @@ public class RegisterServer implements InitializingBean {
 
     final   Logger log =  Logger.getLogger(RegisterServer.class.getName());
     CountDownLatch coutDown = new CountDownLatch(1);
-    final private String zkAddr;
+    final private String zkAddr="192.168.121.111";
     String host;
-    public RegisterServer(String zkAddr) {
+    /*public RegisterServer(String zkAddr) {
         this.zkAddr = zkAddr;
-    }
+    }*/
 
     public void afterPropertiesSet() throws Exception {
 
+        String host = "123";
          if(null!=host && !"".equals(host)){
              ZooKeeper zk = getZookeeperConnect();
              if(zk!=null){

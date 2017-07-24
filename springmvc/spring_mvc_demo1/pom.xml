@@ -325,6 +325,27 @@
 
   <build>
     <finalName>spring_mvc_demo1</finalName>
+    <!--解决java里面xml文件无法编译的问题-->
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.xml</include>
+        </includes>
+        <filtering>false</filtering>
+      </resource>
+
+      <resource>
+        <directory>src/main/resources</directory>
+            <includes>
+              <include>**/*.properties</include>
+              <include>**/*.xml</include>
+            </includes>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+
+
     <plugins>
       <plugin>
         <groupId>org.mortbay.jetty</groupId>

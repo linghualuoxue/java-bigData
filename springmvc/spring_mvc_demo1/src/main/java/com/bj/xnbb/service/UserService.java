@@ -1,4 +1,4 @@
-package com.bj.xnbb.server;
+package com.bj.xnbb.service;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ public interface UserService {
 	 * @param id
 	 * @return
 	 */
-    public User getUserById(int id);
+    public User getUserById(Integer id);
 
     /**
      * 保存用户

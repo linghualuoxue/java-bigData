@@ -37,6 +37,6 @@
 
     <!-- aop -->
     <aop:config>
-        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.bj.xnbb.service.*.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.bj.xnbb.service.*.*(..))"/>
     </aop:config>
 </beans>
