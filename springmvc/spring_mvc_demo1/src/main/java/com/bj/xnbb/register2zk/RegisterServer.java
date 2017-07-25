@@ -1,6 +1,6 @@
 package com.bj.xnbb.register2zk;
 
-import com.bj.xnbb.Constant.Constant;
+import com.bj.xnbb.ssmTest.constant.Constant;
 import org.apache.log4j.Logger;
 import org.apache.zookeeper.*;
 import org.springframework.beans.factory.InitializingBean;

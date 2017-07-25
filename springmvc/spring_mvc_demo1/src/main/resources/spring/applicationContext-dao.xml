@@ -30,7 +30,7 @@
         <!--配置mapper的映射文件-->
         <property name="mapperLocations">
             <list>
-                <value>classpath:com/bj/xnbb/dao/*.xml</value>
+                <value>classpath:com/bj/xnbb/ssmTest/dao/*.xml</value>
                <!-- <value>classpath:com/bj/xnbb/dao/UserDao.xml</value>-->
 
             </list>
@@ -40,7 +40,7 @@
     <!-- mapper扫描器  在spring容器中注册，生成接口的代理对象-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 扫描包路径，如果需要扫描多个包，中间使用半角逗号隔开 -->
-        <property name="basePackage" value="com.bj.xnbb.dao"></property>
+        <property name="basePackage" value="com.bj.xnbb.ssmTest.dao"></property>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
          </beans>

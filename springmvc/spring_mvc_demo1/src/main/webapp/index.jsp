@@ -2,6 +2,18 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <body>
-<a href="user/getUserById?id=1">获取用户</a>
+
+<a href="esAction/queryEs.action?province=北京市">查询</a>
+
+<%--<div>
+
+    <table>
+
+        <tr></tr>
+
+    </table>
+
+</div>--%>
+
 </body>
 </html>

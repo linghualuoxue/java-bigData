@@ -16,7 +16,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
                  <!-- 配置自动扫描的包 -->
-    <context:component-scan base-package="com.bj.xnbb.controller"></context:component-scan>
+    <context:component-scan base-package="com.bj.xnbb.*.controller"></context:component-scan>
 
        <!-- 开启注解模式驱动 -->
        <mvc:annotation-driven></mvc:annotation-driven>
@@ -27,7 +27,7 @@
            </bean>
 
     <mvc:interceptors>
-        <bean class="com.bj.xnbb.interceptors.FirstInterceptor"></bean>
+        <bean class="com.bj.xnbb.ssmTest.interceptors.FirstInterceptor"></bean>
     </mvc:interceptors>
    
      <!--向zookeeper中注册服务

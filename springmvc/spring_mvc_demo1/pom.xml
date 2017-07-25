@@ -153,18 +153,18 @@
     </dependency>
 
     <!-- DruidDataSource 阿里的数据库连接池-->
-    <dependency>
+ <!--   <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>druid</artifactId>
       <version>${druid.version}</version>
-    </dependency>
+    </dependency>-->
 
     <!-- jackson -->
-    <dependency>
+   <!-- <dependency>
       <groupId>org.codehaus.jackson</groupId>
       <artifactId>jackson-mapper-asl</artifactId>
       <version>${jackson.version}</version>
-    </dependency>
+    </dependency>-->
 
     <!-- log start -->
     <dependency>
@@ -206,11 +206,11 @@
       <version>${commons.fileupload.version}</version>
     </dependency>
 
-    <dependency>
+  <!--  <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
       <version>${httpclient.version}</version>
-    </dependency>
+    </dependency>-->
 
     <dependency>
       <groupId>commons-codec</groupId>
@@ -238,11 +238,11 @@
     <!-- end apache -->
 
     <!-- google -->
-    <dependency>
+   <!-- <dependency>
       <groupId>com.google.collections</groupId>
       <artifactId>google-collections</artifactId>
       <version>${google.collections.version}</version>
-    </dependency>
+    </dependency>-->
 
     <!-- cglib -->
     <dependency>
@@ -292,11 +292,11 @@
     </dependency>
 
     <!-- hibernate-validator -->
-    <dependency>
+  <!--  <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-validator</artifactId>
       <version>${hibernate.validator.version}</version>
-    </dependency>
+    </dependency>-->
 
     <!-- netty -->
     <dependency>
@@ -321,6 +321,23 @@
       <scope>compile</scope>
     </dependency>
 
+    <dependency>
+      <groupId>org.elasticsearch</groupId>
+      <artifactId>elasticsearch</artifactId>
+      <version>2.2.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.8</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.6</version>
+    </dependency>
   </dependencies>
 
   <build>
