@@ -212,6 +212,8 @@
       <version>${httpclient.version}</version>
     </dependency>-->
 
+
+
     <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
@@ -243,6 +245,17 @@
       <artifactId>google-collections</artifactId>
       <version>${google.collections.version}</version>
     </dependency>-->
+
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-core-asl</artifactId>
+      <version>1.8.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-mapper-asl</artifactId>
+      <version>1.8.4</version>
+    </dependency>
 
     <!-- cglib -->
     <dependency>
@@ -341,7 +354,10 @@
   </dependencies>
 
   <build>
-    <finalName>spring_mvc_demo1</finalName>
+    <finalName>xnbb</finalName>
+
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <outputDirectory>target/classes</outputDirectory>
     <!--解决java里面xml文件无法编译的问题-->
     <resources>
       <resource>
@@ -364,6 +380,20 @@
 
 
     <plugins>
+
+      <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-war-plugin</artifactId>
+           <version>2.1.1</version>
+         <!--   <configuration>
+               <webResources>
+                   <resource>
+                      <director>src/main/resource</director>
+                   </resource>
+               </webResources>
+            </configuration>-->
+      </plugin>
+
       <plugin>
         <groupId>org.mortbay.jetty</groupId>
         <artifactId>maven-jetty-plugin</artifactId>
@@ -372,10 +402,10 @@
           <scanIntervalSeconds>1</scanIntervalSeconds>
           <connectors>
             <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-              <port>8080</port>
+              <port>8888</port>
             </connector>
           </connectors>
-          <contextPath>/springMvc</contextPath>
+          <contextPath>/xnbb</contextPath>
         </configuration>
       </plugin>
 
