@@ -75,13 +75,13 @@ public class ClientHelper {
                     .getInstance().getValue(Constant.ES_HOST);
             String port = BasicConfiguration.getInstance().getValue(Constant.ES_PORT);
             Settings settings = Settings.settingsBuilder()
-                    .put("cluster.name", cluter)
-                    .put("client.transport.ping_timeout",Long.MAX_VALUE).build();   //设置超时时间
+                    .put("cluster.name", cluter).build();
+                 //   .put("client.transport.ping_timeout",1000).build();   //设置超时时间
             Client client  =  TransportClient.builder().settings(settings).build()
                     .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName(host),
-                            Integer.parseInt(port)))
-                    .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("192.168.0.123"),
                             Integer.parseInt(port)));
+                   /* .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("192.168.0.123"),
+                            Integer.parseInt(port)));*/
             queue.put(client);
             atomicInteger.getAndIncrement();
         }catch (Exception e){

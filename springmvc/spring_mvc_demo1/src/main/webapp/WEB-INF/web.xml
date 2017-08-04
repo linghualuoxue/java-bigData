@@ -41,7 +41,7 @@
     <!-- 拦截所有请求，对其进行过滤 -->
     <filter-mapping>
         <filter-name>characterEncodingFilter</filter-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/</url-pattern>
     </filter-mapping>
 
     <!-- 配置DispatchcerServlet -->
