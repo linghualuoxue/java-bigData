@@ -11,6 +11,7 @@ public class RequestParam {
     private String city;
     private String yys;
     private String keyword;
+    private String type;//正则匹配类型
 
     public int getStime() {
         return stime;
@@ -60,6 +61,14 @@ public class RequestParam {
         this.keyword = keyword;
     }
 
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     @Override
     public String toString() {

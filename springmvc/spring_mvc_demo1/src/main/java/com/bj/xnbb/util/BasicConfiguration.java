@@ -1,4 +1,4 @@
-package com.bj.xnbb.es_search.util;
+package com.bj.xnbb.util;
 
 import com.bj.xnbb.es_search.constant.Constant;
 

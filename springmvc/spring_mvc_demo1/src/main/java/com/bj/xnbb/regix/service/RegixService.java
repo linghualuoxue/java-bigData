@@ -16,10 +16,10 @@ public interface RegixService<T> {
 
     /**
      * 根据id获取实体类
-     * @param id
+     * @param type
      * @return
      */
-    RegixDomain getDomainById(String id);
+    RegixDomain getDomainByType(String type);
 
     /**
      * 存储或者更新数据
@@ -29,8 +29,8 @@ public interface RegixService<T> {
 
     /**
      * 根据id删除规则
-     * @param id
+     * @param type
      */
-    void deleteRegix(String id);
+    void deleteRegix(String type);
 
 }

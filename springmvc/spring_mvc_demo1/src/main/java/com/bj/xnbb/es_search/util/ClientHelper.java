@@ -1,6 +1,7 @@
 package com.bj.xnbb.es_search.util;
 
 import com.bj.xnbb.es_search.constant.Constant;
+import com.bj.xnbb.util.BasicConfiguration;
 import org.apache.log4j.Logger;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;

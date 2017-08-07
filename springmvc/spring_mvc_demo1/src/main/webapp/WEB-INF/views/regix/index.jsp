@@ -30,6 +30,26 @@
    <div id="test" style="width: 100%;height: 400px;">
        <table id="regixTable"></table>
        <div id="pageTable"></div>
+
+       <div id="consoleDlg" style="display:none">
+           <form id="consoleForm">
+               <input type="hidden" id="selectId"/>
+               <table class="formTable">
+                   <tr>
+                       <th>类型</th>
+                       <td><input type="text" class="textField" id="type" name="invdate" />
+                       </td>
+                   </tr>
+                   <tr>
+                       <th>规则</th>
+                       <td><input type="text" class="textField" id="rule" name="name" />
+                       </td>
+                   </tr>
+
+               </table>
+           </form>
+       </div>
+
    </div>
 
 </body>

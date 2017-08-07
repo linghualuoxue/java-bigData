@@ -7,12 +7,14 @@ import com.bj.xnbb.es_search.entity.XWeijizhan;
 import com.bj.xnbb.es_search.service.XWjizhanServercie;
 import com.bj.xnbb.es_search.util.ClientHelper;
 import com.bj.xnbb.es_search.util.ESQueryUtil;
+import com.bj.xnbb.util.JedisUtil;
 import org.apache.commons.lang.StringUtils;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.springframework.stereotype.Service;
+import redis.clients.jedis.Jedis;
 
 import java.util.*;
 
@@ -34,10 +36,9 @@ public class XWjizhanServercieImpl  implements XWjizhanServercie<XWeijizhan> {
     public List<XWeijizhan> queryData(RequestParam param) {
 
         List<XWeijizhan> result = new ArrayList<>();
-
+        Jedis jedis = null;
         if(param!=null){
             BoolQueryBuilder queryBuilder = QueryBuilders.boolQuery();
-
 
             if(StringUtils.isNotEmpty(param.getProvince())){
                 queryBuilder.must(QueryBuilders.matchPhraseQuery("province",param.getProvince()));
@@ -53,6 +54,11 @@ public class XWjizhanServercieImpl  implements XWjizhanServercie<XWeijizhan> {
                   if(yysMap.get(param.getYys())!=null){
                      queryBuilder.must(QueryBuilders.termsQuery("bts",yysMap.get(param.getYys())));
                   }
+            }
+            if(StringUtils.isNotEmpty(param.getType())){
+                jedis = JedisUtil.getClient();
+                String rule = jedis.hget("regix",param.getType());
+                queryBuilder.must(QueryBuilders.regexpQuery("body",rule));
             }
             if(StringUtils.isNotEmpty(param.getKeyword())){
                 queryBuilder.must(QueryBuilders.matchPhraseQuery("body",param.getKeyword()));
@@ -127,6 +133,7 @@ public class XWjizhanServercieImpl  implements XWjizhanServercie<XWeijizhan> {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                if(jedis!=null)JedisUtil.close(jedis); //关闭jedis连接
             }
         }
         return result;
