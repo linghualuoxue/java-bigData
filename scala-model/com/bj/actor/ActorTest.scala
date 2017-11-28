@@ -20,8 +20,10 @@ object MyActor2 extends Actor{
     }
   }
 }
-object ActorTest extends App{
+object ActorTest{
+  def main(args: Array[String]): Unit = {
+    MyActor1.start()
+    MyActor2.start()
+  }
 
-  MyActor1.start()
-  MyActor2.start()
 }

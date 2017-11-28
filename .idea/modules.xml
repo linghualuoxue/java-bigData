@@ -4,10 +4,19 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ETL-Model/ETL-Modul.iml" filepath="$PROJECT_DIR$/ETL-Model/ETL-Modul.iml" />
       <module fileurl="file://$PROJECT_DIR$/LogDataReceive/LogDataReceive.iml" filepath="$PROJECT_DIR$/LogDataReceive/LogDataReceive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/add-model/add-model.iml" filepath="$PROJECT_DIR$/add-model/add-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-test-model/bridge-test/bridge-test.iml" filepath="$PROJECT_DIR$/java-test-model/bridge-test/bridge-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-test-model/builder-test/builder-test.iml" filepath="$PROJECT_DIR$/java-test-model/builder-test/builder-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-test-model/chain-test/chain-test.iml" filepath="$PROJECT_DIR$/java-test-model/chain-test/chain-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-model/dobbox_model1/dobbox_provider/dobbox_provider.iml" filepath="$PROJECT_DIR$/dubbo-model/dobbox_model1/dobbox_provider/dobbox_provider.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/2016-03-26-elasticsearch/下午视频/es_hbase_new/es_hbase.iml" filepath="$USER_HOME$/Desktop/2016-03-26-elasticsearch/下午视频/es_hbase_new/es_hbase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-test-model/factory-test1/factory-test1.iml" filepath="$PROJECT_DIR$/java-test-model/factory-test1/factory-test1.iml" />
       <module fileurl="file://$PROJECT_DIR$/hadoop-model/hadoop-model.iml" filepath="$PROJECT_DIR$/hadoop-model/hadoop-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/hbase-model/hbase-model.iml" filepath="$PROJECT_DIR$/hbase-model/hbase-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/hbase-model/hbase-model-test1/hbase-model-test1.iml" filepath="$PROJECT_DIR$/hbase-model/hbase-model-test1/hbase-model-test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-test-model/java-test/java-test.iml" filepath="$PROJECT_DIR$/java-test-model/java-test/java-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-test-model/java-test-model.iml" filepath="$PROJECT_DIR$/java-test-model/java-test-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-model/netty-model.iml" filepath="$PROJECT_DIR$/netty-model/netty-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-demo/rpc-client/rpc-client.iml" filepath="$PROJECT_DIR$/rpc-demo/rpc-client/rpc-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-demo/rpc-common/rpc-common.iml" filepath="$PROJECT_DIR$/rpc-demo/rpc-common/rpc-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-demo/rpc-demo.iml" filepath="$PROJECT_DIR$/rpc-demo/rpc-demo.iml" />
@@ -16,7 +25,16 @@
       <module fileurl="file://$PROJECT_DIR$/rpc-demo/rpc-server/rpc-server.iml" filepath="$PROJECT_DIR$/rpc-demo/rpc-server/rpc-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/rpc-demo/rpc-simple-demo/rpc-simple-demo.iml" filepath="$PROJECT_DIR$/rpc-demo/rpc-simple-demo/rpc-simple-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/scala-model/scala-model.iml" filepath="$PROJECT_DIR$/scala-model/scala-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scala-model-one/scala-model-one.iml" filepath="$PROJECT_DIR$/scala-model-one/scala-model-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servlet-model/servlet-model.iml" filepath="$PROJECT_DIR$/servlet-model/servlet-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socket_model/socket_model.iml" filepath="$PROJECT_DIR$/socket_model/socket_model.iml" />
       <module fileurl="file://$PROJECT_DIR$/spark-model/spark-model.iml" filepath="$PROJECT_DIR$/spark-model/spark-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_boot_model/spring_boot_example1/spring_boot_example1.iml" filepath="$PROJECT_DIR$/spring_boot_model/spring_boot_example1/spring_boot_example1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_boot_model/spring_boot_model.iml" filepath="$PROJECT_DIR$/spring_boot_model/spring_boot_model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-test-model/state-test/state-test.iml" filepath="$PROJECT_DIR$/java-test-model/state-test/state-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-root/test-root.iml" filepath="$PROJECT_DIR$/test-root/test-root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread_test/thread_test.iml" filepath="$PROJECT_DIR$/thread_test/thread_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yl-parent/yl-parent.iml" filepath="$PROJECT_DIR$/yl-parent/yl-parent.iml" />
     </modules>
   </component>
 </project>

@@ -35,7 +35,7 @@ public class Server {
                 });
 
         ChannelFuture future = bootstrap.bind(8687).sync();
-        future.channel().close().sync();
+        future.channel().closeFuture().sync();  //关闭通道
 
         boss.shutdownGracefully();
         worker.shutdownGracefully();

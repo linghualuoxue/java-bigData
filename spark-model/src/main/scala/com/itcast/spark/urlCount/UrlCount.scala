@@ -41,6 +41,7 @@ object UrlCount{
 class MyPartitioner(ins : Array[String])extends Partitioner{
   val parMap = new mutable.HashMap[String,Int]()
   var count=0
+  
   for (i <- ins){
     parMap += (i -> count)
     count += 1

@@ -1,10 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="EntryPointsManager">
-    <entry_points version="2.0" />
-  </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$USER_HOME$/Desktop/2016-03-26-elasticsearch/下午视频/es_hbase_new" />
+    <file type="web" url="file://$USER_HOME$/Downloads/springmvc-master" />
     <file type="web" url="file://$PROJECT_DIR$/LogDataReceive" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/spring_mvc_demo1" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc/spring_mvc_demo2" />
+  </component>
+  <component name="MavenBuildProjectComponent">
+    <option name="mavenExecutable" value="" />
+    <option name="Settings File" value="" />
+    <option name="mavenCommandLineParams" value="" />
+    <option name="vmOptions" value="" />
+    <option name="useMavenEmbedder" value="false" />
+    <option name="useFilter" value="true" />
+    <option name="Batch Mode" value="false" />
+    <option name="Check Plugin Updates" value="false" />
+    <option name="Debug" value="false" />
+    <option name="Errors" value="false" />
+    <option name="Fail At End" value="false" />
+    <option name="Fail Fast" value="false" />
+    <option name="Fail Never" value="false" />
+    <option name="Lax Checksums" value="false" />
+    <option name="No Plugin Registry" value="false" />
+    <option name="No Plugin Updates" value="false" />
+    <option name="Non Recursive" value="false" />
+    <option name="Offline" value="false" />
+    <option name="Reactor" value="false" />
+    <option name="Strict Checksums" value="false" />
+    <option name="Update Plugins" value="false" />
+    <option name="Update Snapshots" value="false" />
+    <option name="Skip Tests" value="false" />
+    <pom-list />
+  </component>
+  <component name="MavenCompilerTasksManager">
+    <option name="beforeCompileTasks">
+      <set>
+        <MavenCompilerTask>
+          <option name="goal" value="org.mortbay.jetty:maven-jetty-plugin:6.1.26:run" />
+          <option name="projectPath" value="$PROJECT_DIR$/springmvc/spring_mvc_demo1/pom.xml" />
+        </MavenCompilerTask>
+        <MavenCompilerTask>
+          <option name="goal" value="org.mortbay.jetty:maven-jetty-plugin:6.1.7:run" />
+          <option name="projectPath" value="$PROJECT_DIR$/springmvc/spring_mvc_demo1/pom.xml" />
+        </MavenCompilerTask>
+      </set>
+    </option>
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -14,26 +55,20 @@
         <option value="$PROJECT_DIR$/spark-model/pom.xml" />
         <option value="$PROJECT_DIR$/rpc-demo/pom.xml" />
         <option value="$PROJECT_DIR$/hadoop-model/pom.xml" />
+        <option value="$PROJECT_DIR$/socket_model/pom.xml" />
+        <option value="$USER_HOME$/Desktop/2016-03-26-elasticsearch/下午视频/es_hbase_new/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-model/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-model/dobbox_model1/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-model/dobbox_model1/dobbox_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_boot_model/pom.xml" />
+        <option value="$PROJECT_DIR$/add-model/pom.xml" />
+        <option value="$PROJECT_DIR$/test-root/pom.xml" />
+        <option value="$PROJECT_DIR$/servlet-model/pom.xml" />
+        <option value="$PROJECT_DIR$/yl-parent/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/hadoop-test/pom.xml" />
-        <option value="$PROJECT_DIR$/rpc-server/pom.xml" />
-      </set>
-    </option>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" assert-keyword="false" jdk-15="false" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/../testScala/out" />
   </component>
 </project>

@@ -1,47 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <resourceExtensions />
-    <wildcardResourcePatterns>
-      <entry name="!?*.java" />
-      <entry name="!?*.form" />
-      <entry name="!?*.class" />
-      <entry name="!?*.groovy" />
-      <entry name="!?*.scala" />
-      <entry name="!?*.flex" />
-      <entry name="!?*.kt" />
-      <entry name="!?*.clj" />
-      <entry name="!?*.aj" />
-    </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
+        <module name="add-model" />
+        <module name="bridge-test" />
+        <module name="builder-test" />
+        <module name="chain-test" />
+        <module name="dobbox_provider" />
+        <module name="dubbo_demo1" />
+        <module name="es_hbase" />
+        <module name="factory-test1" />
         <module name="hadoop-model" />
         <module name="hbase-model-test1" />
-        <module name="java-test-model" />
+        <module name="java-test" />
         <module name="LogDataReceive" />
+        <module name="netty-model" />
         <module name="rpc-client" />
         <module name="rpc-common" />
         <module name="rpc-registry" />
         <module name="rpc-sample-client" />
         <module name="rpc-server" />
         <module name="rpc-simple-demo" />
+        <module name="scala-model-one" />
+        <module name="servlet-model" />
+        <module name="socket_model" />
+        <module name="spring_boot_example1" />
+        <module name="state-test" />
+        <module name="test-root" />
+        <module name="thread_test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="add-model" target="1.5" />
+      <module name="bridge-test" target="1.7" />
+      <module name="builder-test" target="1.7" />
+      <module name="chain-test" target="1.7" />
+      <module name="dobbox_model1" target="1.5" />
+      <module name="dobbox_provider" target="1.5" />
+      <module name="dobbox_service" target="1.5" />
+      <module name="dubbo-model" target="1.5" />
+      <module name="dubbo_consumer" target="1.5" />
+      <module name="dubbo_demo1" target="1.5" />
+      <module name="dubbo_provider" target="1.5" />
+      <module name="dubbo_service" target="1.5" />
+      <module name="dubbomodel" target="1.5" />
+      <module name="es_hbase" target="1.5" />
       <module name="ETL-Modul" target="1.5" />
+      <module name="factory-test1" target="1.7" />
       <module name="hadoop-model" target="1.5" />
       <module name="hadoop-test" target="1.5" />
       <module name="hbase-model" target="1.5" />
       <module name="hbase-model-test1" target="1.5" />
+      <module name="java-test" target="1.7" />
       <module name="java-test-model" target="1.7" />
       <module name="LogDataReceive" target="1.5" />
+      <module name="netty-model" target="1.5" />
+      <module name="registTozk" target="1.5" />
       <module name="rpc-client" target="1.5" />
       <module name="rpc-common" target="1.5" />
       <module name="rpc-demo" target="1.5" />
@@ -49,9 +67,22 @@
       <module name="rpc-sample-client" target="1.5" />
       <module name="rpc-server" target="1.5" />
       <module name="rpc-simple-demo" target="1.5" />
+      <module name="scala-model-one" target="1.7" />
+      <module name="servlet-model" target="1.5" />
+      <module name="socket_model" target="1.5" />
       <module name="spark-model" target="1.7" />
+      <module name="spring_boot_example1" target="1.6" />
+      <module name="spring_boot_model" target="1.5" />
+      <module name="spring_mvc_demo1" target="1.8" />
+      <module name="spring_mvc_demo2" target="1.5" />
+      <module name="springmvc" target="1.5" />
+      <module name="springmvc (1) (com.zavier)" target="1.8" />
+      <module name="state-test" target="1.7" />
       <module name="storm-model" target="1.5" />
       <module name="storm-test1" target="1.5" />
+      <module name="test-root" target="1.5" />
+      <module name="thread_test" target="1.5" />
+      <module name="yl-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
