@@ -34,7 +34,9 @@
       <module fileurl="file://$PROJECT_DIR$/java-test-model/state-test/state-test.iml" filepath="$PROJECT_DIR$/java-test-model/state-test/state-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-root/test-root.iml" filepath="$PROJECT_DIR$/test-root/test-root.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread_test/thread_test.iml" filepath="$PROJECT_DIR$/thread_test/thread_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yl-parent/yl-com/yl-com.iml" filepath="$PROJECT_DIR$/yl-parent/yl-com/yl-com.iml" />
       <module fileurl="file://$PROJECT_DIR$/yl-parent/yl-parent.iml" filepath="$PROJECT_DIR$/yl-parent/yl-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yl-parent/yl-sys/yl-sys.iml" filepath="$PROJECT_DIR$/yl-parent/yl-sys/yl-sys.iml" />
     </modules>
   </component>
 </project>

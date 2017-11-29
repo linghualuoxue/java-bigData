@@ -32,6 +32,8 @@
         <module name="state-test" />
         <module name="test-root" />
         <module name="thread_test" />
+        <module name="yl-com" />
+        <module name="yl-sys" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -82,7 +84,9 @@
       <module name="storm-test1" target="1.5" />
       <module name="test-root" target="1.5" />
       <module name="thread_test" target="1.5" />
+      <module name="yl-com" target="1.8" />
       <module name="yl-parent" target="1.8" />
+      <module name="yl-sys" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
