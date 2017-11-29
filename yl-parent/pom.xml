@@ -10,6 +10,7 @@
     <modules>
         <module>yl-sys</module>
         <module>yl-com</module>
+        <module>yl-sys-facade</module>
     </modules>
     <packaging>pom</packaging>
     <name>yl-parent</name>
