@@ -36,4 +36,5 @@ public class BaseJdbcDao {
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
+
 }
