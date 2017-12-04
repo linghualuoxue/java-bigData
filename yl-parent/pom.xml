@@ -11,6 +11,7 @@
         <module>yl-sys</module>
         <module>yl-com</module>
         <module>yl-sys-facade</module>
+        <module>yl-sys-service</module>
     </modules>
     <packaging>pom</packaging>
     <name>yl-parent</name>

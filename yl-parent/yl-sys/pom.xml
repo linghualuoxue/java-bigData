@@ -8,7 +8,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>yl-sys</artifactId>
     <packaging>war</packaging>
-    <name>yl-sys Maven Webapp</name>
+    <name>yl-sys</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>

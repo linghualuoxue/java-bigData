@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+
+	<!--加载配置文件-->
+   <context:property-placeholder location="classpath:config.properties"></context:property-placeholder>
+
+	<dubbo:application name="${dubbox.application}" owner="yangli" organization="dubbox"/>
+    <dubbo:registry address="${dubbox.registry.address}"/>
+
+	<dubbo:annotation package="yl.sys"/>
+	<!--kryo-->
+	<dubbo:protocol name="dubbo" serialization="kryo" optimizer="yl.sys.serial.SerializationOptimizerImpl"/>
+	<dubbo:protocol name="rest" server="${dubbox.rest.server}" port="${dubbox.rest.port}" contextpath="${dubbox.rest.contextpath}" accepts="${dubbox.rest.accepts}"/>
+
+</beans>
