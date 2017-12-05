@@ -27,12 +27,21 @@
         <finalName>yl-sys-service</finalName>
         <resources>
             <resource>
-                <targetPath>${project.build.directory}</targetPath>
+                <targetPath>${project.build.directory}/classes</targetPath>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <includes>
                     <include>**/*.xml</include>
                     <include>**/*.properties</include>
+                </includes>
+            </resource>
+            <!-- 结合com.dubalibababo.container.Main（满足自动加载META-INF/spring目录下的所有Spring配置） -->
+            <resource>
+                <targetPath>${project.build.directory}/classes/META-INF/spring</targetPath>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>spring-context.xml</include>
                 </includes>
             </resource>
         </resources>
