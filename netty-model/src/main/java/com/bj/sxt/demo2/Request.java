@@ -11,7 +11,7 @@ public class Request implements Serializable {
     private String name;
     private String requestMessage;
 
-    private byte[] attachMent;
+    //private byte[] attachMent;//附件
 
     public String getId() {
         return id;
@@ -37,11 +37,11 @@ public class Request implements Serializable {
         this.requestMessage = requestMessage;
     }
 
-    public byte[] getAttachMent() {
+   /* public byte[] getAttachMent() {
         return attachMent;
     }
 
     public void setAttachMent(byte[] attachMent) {
         this.attachMent = attachMent;
-    }
+    }*/
 }

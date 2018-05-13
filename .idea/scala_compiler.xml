@@ -3,16 +3,56 @@
   <component name="ScalaCompilerConfiguration">
     <profile name="Maven 1" modules="spark-model">
       <parameters>
-        <parameter value="-make:transitive" />
         <parameter value="-dependencyfile" />
-        <parameter value="D:\ideaSpace\java-bigData\spark-model\target/.scala_dependencies" />
+        <parameter value="D:\ideaWorkSpace\java-bigData\spark-model\target/.scala_dependencies" />
       </parameters>
     </profile>
     <profile name="Maven 2" modules="java-test-model">
       <parameters>
-        <parameter value="-make:transitive" />
         <parameter value="-dependencyfile" />
-        <parameter value="D:\ideaSpace\java-bigData\java-test-model\target/.scala_dependencies" />
+        <parameter value="D:\ideaWorkSpace\java-bigData\java-test-model\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 3" modules="factory-test1">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\ideaWorkSpace\java-bigData\java-test-model\factory-test1\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 4" modules="scala-model-one">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\ideaWorkSpace\java-bigData\scala-model-one\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 5" modules="state-test">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\ideaWorkSpace\java-bigData\java-test-model\state-test\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 6" modules="chain-test">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\ideaWorkSpace\java-bigData\java-test-model\chain-test\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 7" modules="bridge-test">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\ideaWorkSpace\java-bigData\java-test-model\bridge-test\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 8" modules="builder-test">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\ideaWorkSpace\java-bigData\java-test-model\builder-test\target/.scala_dependencies" />
+      </parameters>
+    </profile>
+    <profile name="Maven 9" modules="java-test">
+      <parameters>
+        <parameter value="-dependencyfile" />
+        <parameter value="D:\ideaWorkSpace\java-bigData\java-test-model\java-test\target/.scala_dependencies" />
       </parameters>
     </profile>
   </component>

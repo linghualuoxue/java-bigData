@@ -5,7 +5,8 @@ import org.apache.spark.{SparkConf, SparkContext}
 /**
   * Created by Administrator on 2017/2/16.
   */
-object UrlCount {
+object
+UrlCount {
 
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("urlCount").setMaster("local[2]")

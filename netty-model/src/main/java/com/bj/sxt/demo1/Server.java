@@ -29,7 +29,7 @@ public class Server {
                         sc.pipeline().addLast(new ServerHandler());
                     }
                 });
-        ChannelFuture f = bootstrap.bind(8765).sync();
+        ChannelFuture f = bootstrap.bind(8687).sync();
         f.channel().closeFuture().sync();
         bossGroup.shutdownGracefully();
         workerGroup.shutdownGracefully();

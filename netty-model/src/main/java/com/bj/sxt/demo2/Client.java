@@ -26,7 +26,17 @@ public class Client {
                          socketChannel.pipeline().addLast(new ClientHandler());
                        }
                    });
-        ChannelFuture future = bs.connect("localhost",8586).sync();
+        ChannelFuture future = bs.connect("localhost",8687).sync();
 
+       /* for (int i = 0; i <5 ; i++) {
+            Request request = new Request();
+            request.setId(i+"");
+            request.setName("name:"+i);
+            request.setRequestMessage("客户端发送消息："+i);
+            future.channel().writeAndFlush(request);
+        }*/
+
+        future.channel().closeFuture().sync();
+        worker.shutdownGracefully();
     }
 }
